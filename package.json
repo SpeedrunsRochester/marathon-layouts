@@ -1,0 +1,24 @@
+{
+  "name": "marathon-layouts",
+  "version": "0.0.1",
+  "description": "Speedruns Rochester marathon layouts",
+  "homepage": "https://twitter.com/SpeedrunROC",
+  "author": "swc19",
+  "dependencies": {
+  },
+  "nodecg": {
+    "compatibleRange": "^1.0.0",
+    "dependencies": [
+      "speedcontrol/nodecg-speedcontrol:>=0.9",
+      "PowerUpWithPride/nodecg-puwp:>=1.0"
+    ],
+    "graphics": [
+      {
+        "file": "game.html",
+        "width": 1920,
+        "height": 1080
+      },
+    ]
+  },
+  "license": "GPL-3.0"
+}
