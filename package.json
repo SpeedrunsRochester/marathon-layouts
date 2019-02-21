@@ -9,7 +9,7 @@
   "nodecg": {
     "compatibleRange": "^1.0.0",
     "bundleDependencies":{
-      "speedcontrol/nodecg-speedcontrol": ">=0.9"
+      "speedcontrol/nodecg-speedcontrol:>=0.9"
 	},
     "graphics": [
 		{
