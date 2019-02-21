@@ -1,5 +1,5 @@
 .game-layout-container{
-    display: none;
+    display: flex;
 }
 
 #layout-container-4_3{
