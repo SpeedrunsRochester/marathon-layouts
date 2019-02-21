@@ -10,10 +10,11 @@
     "compatibleRange": "^1.0.0",
     "dependencies": 
       "speedcontrol/nodecg-speedcontrol:>=0.9",
-    "graphics":
+    "graphics": {
         "file": "game.html",
         "width": 1920,
-        "height": 1080,
+        "height": 1080
+		},
   },
   "license": "GPL-3.0"
 }
