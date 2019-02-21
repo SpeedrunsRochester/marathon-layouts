@@ -10,7 +10,6 @@
     "compatibleRange": "^1.0.0",
     "dependencies": 
       "speedcontrol/nodecg-speedcontrol:>=0.9",
-    ,
     "graphics":
       {
         "file": "game.html",
