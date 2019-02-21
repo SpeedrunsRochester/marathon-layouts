@@ -6,7 +6,7 @@
   "author": "swc19",
   "dependencies": {
   },
-  "nodecg": {
+  "nodecg":
     "compatibleRange": "^1.0.0",
     "dependencies": 
       "speedcontrol/nodecg-speedcontrol:>=0.9",
@@ -15,6 +15,5 @@
         "width": 1920,
         "height": 1080
 		},
-  },
   "license": "GPL-3.0"
 }
