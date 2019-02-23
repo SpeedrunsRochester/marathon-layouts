@@ -6,7 +6,7 @@
     <title>Speedruns Rochester Game Layout</title>
     <link rel="stylesheet" href="css/common.css">
 
-    <link id="layout-css-file" rel="stylesheet" href="">
+    <link rel="stylesheet" type="text/css" href="css/game/4_3.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
@@ -14,9 +14,10 @@
 
     <script>
         let globalLayoutInfo = {"code": "4_3"};
-        let offlineMode = false;
+        let offlineMode = true;
     </script>
-    <!--<script src="js/games/timer.js"></script>-->
+    <script src="js/game/run-info.js"></script>
+	<script src="js/utils.js"></script>
 </head>
 <body>
 
@@ -25,7 +26,7 @@
     <div class="wrapper">
         <div class="left-bar">
             <div class="runner-info">
-                <div class="runner-name runner-name 1"></div>
+                <div class="runner-name runner-name1"></div>
                 <div class="pronouns pronouns1"></div>
             </div>
             <div class="game-info">

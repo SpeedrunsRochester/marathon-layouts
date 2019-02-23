@@ -8,13 +8,13 @@
   "dependencies": {},
   "nodecg": {
     "compatibleRange": "^1.0.0",
-    "bundleDependencies":{},
+    "bundleDependencies": {},
     "graphics": [
-		{
+      {
         "file": "game.html",
         "width": 1920,
         "height": 1080
-		}
-	]
+      }
+    ]
   }
 }
