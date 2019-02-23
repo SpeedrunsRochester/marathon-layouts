@@ -30,6 +30,11 @@ function FixSize(selector){
 
 $(() => {
     if (offlineMode) {
+    	console.log("Offline mode");
+        loadOffline();
+    }
+    else{
+    	console.log("Online mode:");
         loadOffline();
     }
     else{
@@ -38,6 +43,7 @@ $(() => {
 
     function loadOffline(){
         let gameTitle = $('.game-name');
+        let gameCategory = $('.game-category');
         let gameCategory = $('.category');
         let gameSystem = $('.platform');
         let gameYear = $('.year');
@@ -55,12 +61,15 @@ $(() => {
         let name4 = $(".runner-name4");
         let pronouns4 = $(".pronouns4");
 
+        gameTitle.html("Super Smash Bros. Brawl Filler Words");
+        gameCategory.html("Subspace Emissary Any% Easy Filler Words");
         gameTitle.html("Title");
         gameCategory.html("category");
         gameSystem.html("system");
         gameYear.html("1902");
         gameEstimate.html("5:15:30");
 
+        name1.text("swc19");
         name1.text("Conklestothemax");
         pronouns1.text("He/Him");
 
@@ -83,10 +92,12 @@ $(() => {
 
         // JQuery selectors.
         let gameTitle = $('.game-name');
+        let gameCategory = $('.game-category');
         let gameCategory = $('.category');
         let gameSystem = $('.platform');
         let gameYear = $('.year');
         let gameEstimate = $('.estimate');
+
 
         // This is where the information is received for the run we want to display.
         // The "change" event is triggered when the current run is changed.
