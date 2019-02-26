@@ -30,21 +30,20 @@ body{
     top: 385px;
     width: var(--left-bar-width);
     height: 460px;
-    font-size:48px;
+
 }
 
 .runner-info{
     position: absolute;
+    top: 0px;
+    left: 100px;
+    width: 390px;
+    height: 70px;
 
-    top: 5px;
-    left: 90px;
-    width: 385px;
-    height: 68px;
 }
 
 .runner-name{
     position: absolute;
-
     left: 0;
 	top: -5px;
     width: 290px;
@@ -53,11 +52,11 @@ body{
 	font-size: 2vw;
 	text-align: center;
 	vertical-align: middle;
+
 }
 
 .pronouns{
     position: absolute;
-
 	top: 7px;
     left: 303px;
     width: 75px;
@@ -93,6 +92,15 @@ body{
     height: 40px;
     text-align: center;
     font-size: 1.5vw;
+
+}
+.game-category{
+    position: absolute;
+    top: 85px;
+	width: 470px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
 }
 
 .estimate{

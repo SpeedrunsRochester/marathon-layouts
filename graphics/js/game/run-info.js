@@ -32,6 +32,7 @@ $(() => {
     if (offlineMode) {
         loadOffline();
     }
+
     else{
         loadFromSpeedControl();
     }
@@ -44,6 +45,7 @@ $(() => {
         var gameEstimate = $('.estimate');
 		var debug = $('.debug');
 		debug.html("Offline Mode");
+
 
         var name1 = $(".runner-name1");
         var pronouns1 = $(".pronouns1");
@@ -59,11 +61,13 @@ $(() => {
 
         gameTitle.html("Super Smash Bros. Brawl Filler Words");
         gameCategory.html("Subspace Emissary Any% Easy Filler Words");
+
         gameSystem.html("system");
         gameYear.html("1902");
         gameEstimate.html("5:15:30");
 
         name1.text("swc19");
+
         pronouns1.text("He/Him");
 
         name2.text("Protomagicalgirl");
@@ -91,6 +95,8 @@ $(() => {
         var gameEstimate = $('.estimate');
 		var debug = $('.debug');
 		//debug.html("Online Mode");
+
+
 
 
         // This is where the information is received for the run we want to display.
