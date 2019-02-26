@@ -45,7 +45,7 @@ body{
 .runner-name{
     position: absolute;
     left: 0;
-	top: -5px;
+	top: 3px;
     width: 290px;
     height: 68px;
 	line-height: 70px;
@@ -115,9 +115,10 @@ body{
 
 .timer{
 	position:absolute;
-	top:325px;
+	top:340px;
 	left: 0;
 	width: var(--left-bar-width);
 	height: 135px;
 	font-size: 5vw;
+	text-align: center;
 }

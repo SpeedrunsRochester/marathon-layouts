@@ -44,7 +44,7 @@ $(() => {
         var gameYear = $('.year');
         var gameEstimate = $('.estimate');
 		var debug = $('.debug');
-		debug.html("Offline Mode");
+		//debug.html("Offline Mode");
 
 
         var name1 = $(".runner-name1");
@@ -85,7 +85,7 @@ $(() => {
     function loadFromSpeedControl() {
         // The bundle name where all the run information is pulled from.
         const speedcontrolBundle = 'nodecg-speedcontrol';
-        const puwpBundle = 'nodecg-puwp';
+        const srrocBundle = 'nodecg-srroc';
 
         // JQuery selectors.
         var gameTitle = $('.game-name');
@@ -108,7 +108,7 @@ $(() => {
                 updateSceneFields(newVal);
         });
 
-        var currentLayout = nodecg.Replicant('currentGameLayout', puwpBundle);
+        var currentLayout = nodecg.Replicant('currentGameLayout', srrocBundle);
 
         // Sets information on the pages for the run.
         function updateSceneFields(runData) {

@@ -101,9 +101,10 @@ body{
 
 .timer{
 	position:absolute;
-	top:323px;
+	top:350px;
 	left: 18px;
 	width: 295px;
 	height: 135px;
-	font-size: 5vw;
+	font-size: 3.5vw;
+	text-align: center;
 }

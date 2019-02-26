@@ -15,6 +15,7 @@ body{
 .wrapper{
 	background: url('../../images/4_3_3p.png') no-repeat;
 	font-family: "Geometry Soft Pro Bold N";
+	font-variant-numeric: tabular-nums;
 	color: white;
 	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 	width: 1920px;
@@ -129,31 +130,35 @@ body{
 
 .timer{
 	position:absolute;
-	top:85px;
+	top:88px;
 	left: -90px;
 	width: 585px;
 	height: 110px;
 	font-size: 5vw;
+	text-align: center;
  }
 .timer2{
 	position:absolute;
-	top:-125px;
+	top:-122px;
 	width: 480px;
 	left: -90px;
 	font-size: 5vw;
+	text-align: center;
 }
 .finish-time{
 	position:absolute;
-	top:85px;
+	top:88px;
 	left: -90px;
 	width: 585px;
 	height: 110px;
 	font-size: 5vw;
+	text-align: right;
 }
 .finish-time-runner2{
 	position:absolute;
-	top:-125px;
+	top:-122px;
 	width: 480px;
 	left: -90px;
 	font-size: 5vw;
+	text-align: right;
 }
