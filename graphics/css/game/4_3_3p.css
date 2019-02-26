@@ -1,0 +1,159 @@
+.game-layout-container{
+	display: flex;
+}
+
+#layout-container-4_3_3p{
+	display: block;
+}
+
+body{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper{
+	background: url('../../images/4_3_3p.png') no-repeat;
+	font-family: "Geometry Soft Pro Bold N";
+	color: white;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	width: 1920px;
+	height: 1080px;
+	overflow: hidden;
+	position: relative;
+}
+
+.runner-info1{
+	position: absolute;
+	top: 550px;
+	left: 105px;
+	width: 405px;
+	height: 70px;
+}
+.runner-info2{
+	position: absolute;
+	top: 460px;
+	left: 810px;
+	width: 300px;
+	height: 70px;
+}
+.runner-info3{
+	position: absolute;
+	top: 550px;
+	right: 105px;
+	width: 405px;
+	height: 70px;
+}
+
+.runner-name{
+	position: absolute;
+	left: 0;
+	width: 300px;
+	height: 70px;
+	line-height: 70px;
+	font-size: 2.5vw;
+	text-align: center;
+	vertical-align: center;
+}
+.runner-name2{
+	position: absolute;
+	left: 0;
+	width: 225px;
+	height: 70px;
+	line-height: 70px;
+	font-size: 2vw;
+	text-align: center;
+	vertical-align: center;
+}
+
+.pronouns{
+	position: absolute;
+	top: 10px;
+	left: 315px;
+	width: 75px;
+	height: 50px;
+	line-height: 100%;
+	word-wrap: break-word;
+	text-align: center;
+	vertical-align: center;
+	font-size: 24px;
+}
+.pronouns2{
+	position: absolute;
+	top: 10px;
+	left: 230px;
+	width: 75px;
+	height: 50px;
+	line-height: 100%;
+	word-wrap: break-word;
+	text-align: center;
+	vertical-align: center;
+	font-size: 24px;
+}
+
+.game-info{
+	position: absolute;
+	left:18px;
+	bottom:105px;
+	width:580px;
+	height:210px;
+	text-align: center;
+}
+.game-name{
+	position: absolute;
+	top: 25px;
+	width: 580px;
+	height: 100px;
+	text-align: center;
+	font-size: 3vw;
+}
+.game-category{
+	position: absolute;
+	bottom: 40px;
+	width: 580px;
+	height: 50px;
+	text-align: center;
+	font-size: 2.5vw;
+}
+
+.estimate{
+	position: absolute;
+	bottom: 20px;
+	left: 102px;
+	width: 500px;
+	height: 70px;
+	font-size: 4vw;
+	text-align: center;
+}
+
+
+.timer{
+	position:absolute;
+	top:85px;
+	left: -90px;
+	width: 585px;
+	height: 110px;
+	font-size: 5vw;
+ }
+.timer2{
+	position:absolute;
+	top:-125px;
+	width: 480px;
+	left: -90px;
+	font-size: 5vw;
+}
+.finish-time{
+	position:absolute;
+	top:85px;
+	left: -90px;
+	width: 585px;
+	height: 110px;
+	font-size: 5vw;
+}
+.finish-time-runner2{
+	position:absolute;
+	top:-125px;
+	width: 480px;
+	left: -90px;
+	font-size: 5vw;
+}

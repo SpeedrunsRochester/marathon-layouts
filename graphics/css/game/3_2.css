@@ -1,0 +1,105 @@
+.game-layout-container{
+	display: flex;
+}
+
+#layout-container-3_2{
+	display: block;
+}
+
+body{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper{
+	background: url('../../images/3_2.png') no-repeat;
+	font-family: "Geometry Soft Pro Bold N";
+	color: white;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	width: 1920px;
+	height: 1080px;
+	overflow: hidden;
+	position: relative;
+}
+
+.left-bar{
+	position: absolute;
+	left: 15px;
+	top: 387px;
+	width: 300px;
+	height: 590px;
+	font-size:48px;
+}
+
+.runner-info{
+	position: absolute;
+	top: 0;
+	left: 90px;
+	width: 210px;
+	height: 70px;
+}
+
+.runner-name{
+	position: absolute;
+	left: 5px;
+	width: 140px;
+	height: 70px;
+	line-height: 70px;
+	font-size: 1.5vw;
+	text-align: center;
+}
+
+.pronouns{
+	position: absolute;
+	top: 13px;
+	left: 155px;
+	width: 50px;
+	height: 40px;
+	text-align: center;
+	vertical-align: center;
+	font-size: 16px;
+}
+
+.game-info{
+	position: absolute;
+	left:1px;
+	top:90px;
+	width:300px;
+	height:125px;
+	text-align: center;
+}
+.game-name{
+	position: absolute;
+	top: 0;
+	width: 300px;
+	height: 60px;
+	text-align: center;
+	font-size: 2vw;
+}
+.game-category{
+	position: absolute;
+	top: 85px;
+	width: 300px;
+	height: 50px;
+	text-align: center;
+	font-size: 1.5vw;
+}
+
+.estimate{
+	position: absolute;
+	top: 245px;
+	left: 90px;
+	width: 210px;
+	height: 70px;
+	font-size: 2.5vw;
+	text-align: center;
+}
+
+.timer{
+	position:absolute;
+	top: 320px;
+	width: 300px;
+	height: 135px;
+	font-size: 5vw;
+}

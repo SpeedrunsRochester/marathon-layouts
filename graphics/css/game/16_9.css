@@ -2,7 +2,7 @@
     display: flex;
 }
 
-#layout-container-4_3{
+#layout-container-16_9{
     display: block;
 }
 
@@ -13,7 +13,7 @@ body{
 }
 
 .wrapper{
-    background: url('../../images/4_3.png') no-repeat;
+    background: url('../../images/16_9.png') no-repeat;
     font-family: "Geometry Soft Pro Bold N";
     color: white;
 	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
@@ -21,34 +21,30 @@ body{
     height: 1080px;
     overflow: hidden;
     position: relative;
-	--left-bar-width: 475px;
 }
 
 .left-bar{
     position: absolute;
-    left: 15px;
-    top: 385px;
-    width: var(--left-bar-width);
-    height: 460px;
+    left: 0;
+    top: 305px;
+    width: 305px;
+    height: 590px;
     font-size:48px;
 }
 
 .runner-info{
     position: absolute;
-
-    top: 5px;
-    left: 90px;
-    width: 385px;
-    height: 68px;
+    top: 0;
+    left: 100px;
+    width: 390px;
+    height: 70px;
 }
 
 .runner-name{
     position: absolute;
-
-    left: 0;
-	top: -5px;
-    width: 290px;
-    height: 68px;
+    left: 7px;
+    width: 150px;
+    height: 70px;
 	line-height: 70px;
 	font-size: 2vw;
 	text-align: center;
@@ -57,11 +53,10 @@ body{
 
 .pronouns{
     position: absolute;
-
-	top: 7px;
-    left: 303px;
-    width: 75px;
-    height: 68px;
+	top: 12px;
+    left: 160px;
+    width: 57px;
+    height: 50px;
     line-height: 100%;
     word-wrap: break-word;
 	text-align: center;
@@ -71,45 +66,44 @@ body{
 
 .game-info{
     position: absolute;
-    left:0;
-    top:93px;
-    width: var(--left-bar-width);
+    left:18px;
+    top:90px;
+    width:295px;
     height:125px;
     text-align: center;
 }
 .game-name{
     position: absolute;
-    top: 0px;
-	width: var(--left-bar-width);
-    height: 75px;
+    top: 10px;
+	width: 295px;
+    height: 60px;
     text-align: center;
-	vertical-align: middle;
-    font-size: 2vw;
+    font-size: 28px;
 }
 .game-category{
     position: absolute;
-    top: 93px;
-	width: var(--left-bar-width);
-    height: 40px;
+    top: 85px;
+	width: 295px;
+    height: 50px;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 24px;
 }
 
 .estimate{
     position: absolute;
-    top: 240px;
-    left: 90px;
-    width: 385px;
-    height: 68px;
-	font-size: 3vw;
+    top: 250px;
+    left: 105px;
+    width: 210px;
+    height: 70px;
+	font-size: 2vw;
     text-align: center;
 }
 
 .timer{
 	position:absolute;
-	top:325px;
-	left: 0;
-	width: var(--left-bar-width);
+	top:323px;
+	left: 18px;
+	width: 295px;
 	height: 135px;
 	font-size: 5vw;
 }

@@ -5,17 +5,17 @@
 function FixSize(selector){
 
     setTimeout(function(){
-        let divWidth = $(selector + ":visible").width();
-        let fontSize = 92;
+        var divWidth = $(selector + ":visible").width();
+        var fontSize = 92;
 
         // Reset font to default size to start.
         $(selector).css("font-size", "");
 
-        let text_org = $(selector + ":visible").html();
-        let text_update = '<span style="white-space:nowrap;">' + text_org + '</span>';
+        var text_org = $(selector + ":visible").html();
+        var text_update = '<span style="white-space:nowrap;">' + text_org + '</span>';
         $(selector + ":visible").html(text_update);
 
-        let childWidth = $(selector + ":visible").children().width();
+        var childWidth = $(selector + ":visible").children().width();
 
         // console.log(childWidth + " " + divWidth);
 
@@ -30,32 +30,32 @@ function FixSize(selector){
 
 $(() => {
     if (offlineMode) {
-    	console.log("Offline mode");
         loadOffline();
     }
     else{
-    	console.log("Online mode:");
         loadFromSpeedControl();
     }
 
     function loadOffline(){
-        let gameTitle = $('.game-name');
-        let gameCategory = $('.game-category');
-        let gameSystem = $('.platform');
-        let gameYear = $('.year');
-        let gameEstimate = $('.estimate');
+        var gameTitle = $('.game-name');
+        var gameCategory = $('.game-category');
+        var gameSystem = $('.platform');
+        var gameYear = $('.year');
+        var gameEstimate = $('.estimate');
+		var debug = $('.debug');
+		debug.html("Offline Mode");
 
-        let name1 = $(".runner-name1");
-        let pronouns1 = $(".pronouns1");
+        var name1 = $(".runner-name1");
+        var pronouns1 = $(".pronouns1");
 
-        let name2 = $(".runner-name2");
-        let pronouns2 = $(".pronouns2");
+        var name2 = $(".runner-name2");
+        var pronouns2 = $(".pronouns2");
 
-        let name3 = $(".runner-name3");
-        let pronouns3 = $(".pronouns3");
+        var name3 = $(".runner-name3");
+        var pronouns3 = $(".pronouns3");
 
-        let name4 = $(".runner-name4");
-        let pronouns4 = $(".pronouns4");
+        var name4 = $(".runner-name4");
+        var pronouns4 = $(".pronouns4");
 
         gameTitle.html("Super Smash Bros. Brawl Filler Words");
         gameCategory.html("Subspace Emissary Any% Easy Filler Words");
@@ -84,31 +84,33 @@ $(() => {
         const puwpBundle = 'nodecg-puwp';
 
         // JQuery selectors.
-        let gameTitle = $('.game-name');
-        let gameCategory = $('.game-category');
-        let gameSystem = $('.platform');
-        let gameYear = $('.year');
-        let gameEstimate = $('.estimate');
-
+        var gameTitle = $('.game-name');
+        var gameCategory = $('.game-category');
+        var gameSystem = $('.platform');
+        var gameYear = $('.year');
+        var gameEstimate = $('.estimate');
+		var debug = $('.debug');
+		//debug.html("Online Mode");
 
 
         // This is where the information is received for the run we want to display.
         // The "change" event is triggered when the current run is changed.
-        let runDataActiveRun = nodecg.Replicant('runDataActiveRun', speedcontrolBundle);
+        var runDataActiveRun = nodecg.Replicant('runDataActiveRun', speedcontrolBundle);
         runDataActiveRun.on('change', (newVal, oldVal) => {
             if (newVal)
+				//debug.html("Updating Scene Fields");
                 updateSceneFields(newVal);
         });
 
-        let currentLayout = nodecg.Replicant('currentGameLayout', puwpBundle);
+        var currentLayout = nodecg.Replicant('currentGameLayout', puwpBundle);
 
         // Sets information on the pages for the run.
         function updateSceneFields(runData) {
-            let currentTeamsData = getRunnersFromRunData(runData);
-
+            var currentTeamsData = getRunnersFromRunData(runData);
+			//debug.html("Got Runners");
             // Split year out from system platform, if present.
-            let system = runData.system.split("-");
-            let year = '';
+            var system = runData.system.split("-");
+            var year = '';
 
             if (system.length > 1) {
                 year = system[1].trim();
@@ -116,18 +118,24 @@ $(() => {
             system = system[0].trim();
 
             gameTitle.html(runData.game);
+			//debug.html("Got Game");
             gameCategory.html(runData.category);
+			//debug.html("Got Category");
             gameSystem.html(system);
+			//debug.html("Got System");
             gameYear.html(year);
+			//debug.html("Got Year");
             gameEstimate.html(runData.estimate);
+			//debug.html("Got Estimate");
 
             // Set each player names and pronouns.
-            let i = 0;
-            for (let team of currentTeamsData) {
-                for (let member of team.members) {
+            var i = 0;
+            for (var team of currentTeamsData) {
+                for (var member of team.members) {
+					//debug.html("Member: " + member.name);
                     i += 1;
-                    let name = $(".runner-name" + i);
-                    let pronouns = $(".pronouns" + i);
+                    var name = $(".runner-name" + i);
+                    var pronouns = $(".pronouns" + i);
                     name.text(member.name);
                     pronouns.text(member.pronouns);
                     FixSize('.runner-name' + i);
@@ -135,8 +143,52 @@ $(() => {
             }
 
             // Fix pronoun wrapping for the current layout if needed.
-            FixSize('.game-name');
             fixPronounWrapping(currentLayout.value);
         }
+		function getRunnersFromRunData(runData) {
+			//debug.html("Getting Runner Data");
+			var currentTeamsData = [];
+			//debug.html("Made Array");
+			runData.teams.forEach(team => {
+				//debug.html("Found a team");
+				var teamData = {members: []};
+				//debug.html("Making data");
+				team.players.forEach(member => {
+					//debug.html("Found a team member");
+					teamData.members.push(createMemberData(member));
+					});
+				//debug.html("Pushing data");
+				currentTeamsData.push(teamData);
+				//debug.html("Got some Runner Data");
+			});
+			return currentTeamsData;
+		}
+		function createMemberData(member) {
+			// Gets username from URL.
+			//debug.html("Grabbing Member Name");
+			var name = member.name.split('-');
+			//debug.html("Got Member Name");
+			if(name.length > 1){
+				//debug.html("Adding Pronouns");
+				var pronouns = name[1].trim();
+				name = name[0].trim();
+			} else {
+				name = name[0].trim();
+				var pronouns = ''
+			}
+			//debug.html("Returning MemberData");
+			return {
+				name: name,
+				pronouns: pronouns,
+			};
+		}
+		function fixPronounWrapping(layoutInfo) {
+			var pronounElements = $('.pronouns');
+			pronounElements.each((i, elem) => {
+				// Use .html() so it doesn't get doubly escaped.
+				$(elem).html($(elem).text().replace(/([-/_])/g,'$&&hairsp;'));
+			});
+		}
+
     }
 });
