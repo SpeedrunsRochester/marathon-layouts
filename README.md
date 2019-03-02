@@ -1,6 +1,6 @@
 # Speedruns Rochester Marathon Layouts
 
-This is a NodeCG graphics bundle, and NodeCG must be installed to use it. It also uses [a fork of PowerUpWithPride's extra utilities](https://github.com/SpeedrunsRochester/nodecg-srroc).  
+This is a NodeCG graphics bundle, and NodeCG must be installed to use it. It also uses [a fork of PowerUpWithPride's extra utilities](https://github.com/SpeedrunsRochester/nodecg-puwp).  
 The following bundles are necessary to get everything working: 
 ```
 speedcontrol/nodecg-speedcontrol
