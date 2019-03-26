@@ -1,0 +1,58 @@
+div {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    position: absolute;
+	background: url('../../images/break.png') no-repeat;
+    font-family: "Geometry Soft Pro Bold N", sans-serif;
+    color: white;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    position: absolute;
+}
+.bg-src{
+	position: absolute;
+	width: 1920px;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.schedule {
+    position: absolute;
+    bottom: 180px;
+    left: 0px;
+    /*display: none; */
+}
+.debug{
+	position: absolute;
+}
+
+.coming-up-title
+{
+	left: 40px;
+	position: absolute;
+    width: 470px;
+    height: 60px;
+    line-height: 60px;
+	font-size: 3vw;
+
+}
+
+.coming-up-info {
+    position: absolute;
+	top: 0px;
+	left: 235px;
+	width: 1275px;
+	font-size: 3vw;
+}
+
+

@@ -17,7 +17,7 @@ body{
 	font-family: "Geometry Soft Pro Bold N";
 	font-variant-numeric: tabular-nums;
 	color: white;
-	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	text-shadow: -2.25px 0 black, 0 2.25px black, 2.25px 0 black, 0 -2.25px black;
 	width: 1920px;
 	height: 1080px;
 	overflow: hidden;
@@ -48,23 +48,23 @@ body{
 
 .runner-name{
 	position: absolute;
-	left: 0;
-	width: 300px;
+	left: 5px;
+	width: 295px;
 	height: 70px;
 	line-height: 70px;
-	font-size: 2.5vw;
+	font-size: 3.5vw;
 	text-align: center;
 	vertical-align: center;
 }
 .runner-name2{
 	position: absolute;
-	left: 0;
-	width: 225px;
+	left: 5px;
+	width: 220px;
 	height: 70px;
 	line-height: 70px;
-	font-size: 2vw;
 	text-align: center;
 	vertical-align: center;
+	font-size: 2.5vw;
 }
 
 .pronouns{
@@ -102,25 +102,26 @@ body{
 }
 .game-name{
 	position: absolute;
-	top: 25px;
-	width: 580px;
+	left: 5px;
+	top: 5px;
+	width: 570px;
 	height: 100px;
 	text-align: center;
-	font-size: 3vw;
+	font-size: 4vw;
 }
 .game-category{
 	position: absolute;
-	bottom: 40px;
+	bottom: 25px;
 	width: 580px;
 	height: 50px;
 	text-align: center;
-	font-size: 2.5vw;
+	font-size: 3vw;
 }
 
 .estimate{
 	position: absolute;
 	bottom: 20px;
-	left: 102px;
+	left: 92px;
 	width: 500px;
 	height: 70px;
 	font-size: 4vw;
@@ -130,35 +131,31 @@ body{
 
 .timer{
 	position:absolute;
-	top:88px;
-	left: -90px;
+	top:80px;
+	left: -12px;
 	width: 585px;
 	height: 110px;
-	font-size: 5vw;
-	text-align: center;
+	font-size: 6vw;
  }
 .timer2{
 	position:absolute;
-	top:-122px;
+	top:-125px;
 	width: 480px;
-	left: -90px;
-	font-size: 5vw;
-	text-align: center;
+	left: -35px;
+	font-size: 5.5vw;
 }
 .finish-time{
 	position:absolute;
-	top:88px;
-	left: -90px;
+	top:95px;
+	left: 52px;
 	width: 585px;
 	height: 110px;
 	font-size: 5vw;
-	text-align: right;
 }
 .finish-time-runner2{
 	position:absolute;
-	top:-122px;
+	top:-118px;
 	width: 480px;
-	left: -90px;
+	left: 7px;
 	font-size: 5vw;
-	text-align: right;
 }

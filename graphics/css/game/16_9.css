@@ -16,7 +16,7 @@ body{
     background: url('../../images/16_9.png') no-repeat;
     font-family: "Geometry Soft Pro Bold N";
     color: white;
-	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	text-shadow: -2.25px 0 black, 0 2.25px black, 2.25px 0 black, 0 -2.25px black;
     width: 1920px;
     height: 1080px;
     overflow: hidden;
@@ -43,68 +43,67 @@ body{
 .runner-name{
     position: absolute;
     left: 7px;
-    width: 150px;
+    width: 155px;
     height: 70px;
 	line-height: 70px;
-	font-size: 2vw;
+	font-size: 3vw;
 	text-align: center;
 	vertical-align: middle;
 }
 
 .pronouns{
     position: absolute;
-	top: 12px;
-    left: 160px;
-    width: 57px;
-    height: 50px;
+	top: 20px;
+    left: 165px;
+    width: 43px	;
+    height: 40px;
     line-height: 100%;
     word-wrap: break-word;
 	text-align: center;
 	vertical-align: middle;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .game-info{
     position: absolute;
-    left:18px;
+    left:25.5px;
     top:90px;
-    width:295px;
+    width:285px;
     height:125px;
     text-align: center;
 }
-.game-name{
+.game-name-special{
     position: absolute;
-    top: 10px;
-	width: 295px;
+    top: 15px;
     height: 60px;
+	width:285px;
     text-align: center;
-    font-size: 28px;
+	font-size: 3vw;
 }
 .game-category{
     position: absolute;
-    top: 85px;
-	width: 295px;
+    top: 75px;
     height: 50px;
+	width:285px;
     text-align: center;
-    font-size: 24px;
+    font-size: 2vw;
 }
 
 .estimate{
     position: absolute;
-    top: 250px;
+    top: 245px;
     left: 105px;
     width: 210px;
     height: 70px;
-	font-size: 2vw;
+	font-size: 2.5vw;
     text-align: center;
 }
 
 .timer{
 	position:absolute;
-	top:350px;
-	left: 18px;
+	top:345px;
+	left: 24px;
 	width: 295px;
 	height: 135px;
-	font-size: 3.5vw;
-	text-align: center;
+	font-size: 4vw;
 }

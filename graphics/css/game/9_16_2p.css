@@ -1,0 +1,174 @@
+.game-layout-container{
+    display: flex;
+}
+
+#layout-container-9_16_2p{
+    display: block;
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    background: url('../../images/9_16_2p.png') no-repeat;
+    font-family: "Geometry Soft Pro Bold N"	;
+    color: white;
+	text-shadow: -2.25px 0 black, 0 2.25px black, 2.25px 0 black, 0 -2.25px black;
+	width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    position: relative;
+	--left-bar-width: 475px;
+}
+
+.left-bar{
+    position: absolute;
+    left: 15px;
+    top: 385px;
+    width: var(--left-bar-width);
+    height: 460px;
+
+}
+
+.runner-info1{
+    position: absolute;
+    top: 20px;
+    left: 700px;
+    width: 390px;
+    height: 70px;
+
+}
+.runner-info2{
+	position: absolute;
+    bottom: 13px;
+    left: 800px;
+    width: 390px;
+    height: 70px;
+
+}
+.runner-name{
+    position: absolute;
+    left: 50px;
+	top: -5px;
+    width: 250px;
+    height: 68px;
+	line-height: 70px;
+	font-size: 4vw;
+	text-align: left;
+	vertical-align: middle;
+
+}
+.runner-name2{
+	position: absolute;
+    left: 70px;
+	top: -5px;
+    width: 290px;
+    height: 68px;
+	line-height: 70px;
+	font-size: 4vw;
+	text-align: right;
+	vertical-align: middle;
+}
+.pronouns{
+    position: absolute;
+	top: 7px;
+    left: 303px;
+    width: 75px;
+    height: 68px;
+    line-height: 100%;
+    word-wrap: break-word;
+	text-align: center;
+	vertical-align: middle;
+    font-size: 24px;
+}
+.pronouns2{
+	position: absolute;
+	top: 7px;
+	left: 35px;
+    width: 75px;
+    height: 68px;
+    line-height: 100%;
+	text-align: center;
+	vertical-align: middle;
+    font-size: 24px;
+}
+.game-info{
+    position: absolute;
+    left:655px;
+    top:435px;
+    width: 610px;
+    height:210px;
+    text-align: center;
+	font-size: 4vw;
+}
+.game-name{
+    position: absolute;
+	left: 15px;
+    top: 20px;
+	width: 580px;
+    height: 75px;
+    text-align: center;
+    /*font-size: 3vw;*/
+}
+.game-category{
+    position: absolute;
+	left: 15px;
+    bottom: 45px;
+	width: 580px;
+    height: 40px;
+    text-align: center;
+    font-size: 3vw;
+
+}
+
+.estimate{
+    position: absolute;
+    bottom: 350px;
+    left: 745px;
+    width: 520px;
+    height: 68px;
+	font-size: 4vw;
+    text-align: center;
+}
+
+.timer1{
+	position:absolute;
+	top:100px;
+	left: 740px;
+	width: 1920px;
+	height: 135px;
+	font-size: 6vw;
+	vertical-align: middle;
+}
+.timer2{
+	position:absolute;
+	bottom:85px;
+	left: 740px;
+	width: 1920px;
+	height: 135px;
+	font-size: 6vw;
+	vertical-align: middle;
+}
+.finish-time-runner1{
+	position:absolute;
+	top:100px;
+	left: 740px;
+	width: 1920px;
+	height: 135px;
+	font-size: 6vw;
+	vertical-align: middle;
+}
+.finish-time-runner2{
+	position:absolute;
+	bottom:85px;
+	left: 740px;
+	width: 1920px;
+	height: 135px;
+	font-size: 6vw;
+	vertical-align: middle;
+}
+
+
