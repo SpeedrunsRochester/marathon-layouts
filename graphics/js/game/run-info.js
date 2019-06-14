@@ -1,3 +1,4 @@
+
 // Main run info update functionality.
 'use strict';
 
@@ -14,7 +15,7 @@ function FixSize(selector){
         var text_org = $(selector + ":visible").html();
         var text_update = '<span style="white-space:nowrap;">' + text_org + '</span>';
         $(selector + ":visible").html(text_update);
-		
+
 
         var childWidth = $(selector + ":visible").children().width();
 
@@ -124,12 +125,12 @@ $(() => {
             system = system[0].trim();
 
             gameTitle.html(runData.game);
-			$('.game-name-special').html(runData.game);	
+			$('.game-name-special').html(runData.game);
 			FixSize('.game-name');
 			if(runData.game.length > 30){
 				$('.game-name-special').css("font-size", 24);
 				$('.game-name').css("font-size", 36	);
-			} else { 
+			} else {
 				FixSize('.game-name-special');
 				FixSize('.game-name');
 
@@ -138,11 +139,11 @@ $(() => {
 			//debug.html("Got Game");
             gameCategory.html(runData.category);
 			FixSize('.game-category');
-			
+
 			var gameInfoSpecial = $('.game-info-special');
 			gameInfoSpecial.html(runData.game + " - " + runData.category);
 			FixSize('.game-info-special');
-	
+
 			//debug.html("Got Category");
             gameSystem.html(system);
 			//debug.html("Got System");
